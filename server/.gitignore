@@ -1,0 +1,25 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Ignore token and credentials (Gmail API and other secrets)
+token.json
+src/services/Gmail/credentials.json
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE settings (optional)
+.vscode/
+.idea/
+*.swp
+
+# Ignore logs (if any)
+*.log
