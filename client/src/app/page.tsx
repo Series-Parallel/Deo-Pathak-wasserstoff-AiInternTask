@@ -7,7 +7,7 @@ type Message = {
   content: string;
 };
 
-export default function page() {
+export default function Page() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
 
