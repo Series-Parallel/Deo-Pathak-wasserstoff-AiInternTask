@@ -26,84 +26,8 @@ Because I am using google colab I had to run 3 servers in order to maintain the 
 ## Architecture
 [architecture diagram.pdf](https://github.com/user-attachments/files/19640301/architecture.diagram.pdf)
 
-</br>
+![architecture diagram](https://github.com/user-attachments/assets/0469d26f-eb10-4835-a37b-925b83e6e455)
 
-[Uploading architecture diagram.drawio…]()<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="24.8.2">
-  <diagram name="Page-1" id="_JxnIaNpEnCeHdC4lDcU">
-    <mxGraphModel dx="1036" dy="589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="0177z8FTrYNIoKFOcdRL-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0177z8FTrYNIoKFOcdRL-1" target="0177z8FTrYNIoKFOcdRL-2">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-1" value="Browser&lt;div&gt;(UI)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="220" y="40" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0177z8FTrYNIoKFOcdRL-2" target="0177z8FTrYNIoKFOcdRL-4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-2" value="Client&lt;div&gt;(Frontend Code)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="220" y="150" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0177z8FTrYNIoKFOcdRL-4" target="0177z8FTrYNIoKFOcdRL-6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0177z8FTrYNIoKFOcdRL-4" target="0177z8FTrYNIoKFOcdRL-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0177z8FTrYNIoKFOcdRL-4" target="0177z8FTrYNIoKFOcdRL-7">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="310" y="350" />
-              <mxPoint x="395" y="350" />
-              <mxPoint x="395" y="440" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-4" value="Server&lt;div&gt;(Flask)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="220" y="270" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0177z8FTrYNIoKFOcdRL-6" target="0177z8FTrYNIoKFOcdRL-4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0177z8FTrYNIoKFOcdRL-6" target="0177z8FTrYNIoKFOcdRL-20">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-6" value="Ngrok Server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="270" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-7" value="Calendar API&lt;div&gt;(Auto Scheduling)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="410" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-8" value="Slack API&lt;div&gt;(Send Alerts)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="220" y="410" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-9" value="Gmail API&lt;div&gt;(Read/Send)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="410" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0177z8FTrYNIoKFOcdRL-10" target="0177z8FTrYNIoKFOcdRL-6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="0177z8FTrYNIoKFOcdRL-10" target="0177z8FTrYNIoKFOcdRL-4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-10" value="Database&lt;div&gt;(Postgresql)&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="450" y="80" width="120" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.43;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="0177z8FTrYNIoKFOcdRL-4" target="0177z8FTrYNIoKFOcdRL-9">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0177z8FTrYNIoKFOcdRL-20" target="0177z8FTrYNIoKFOcdRL-6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="0177z8FTrYNIoKFOcdRL-20" value="LLM&lt;div&gt;(Google Colab)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="670" y="270" width="120" height="60" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
 
 The architecture is kinda complex but not that difficult to interpret. The browser is showing a simple interface of a chat with AI. It is getting the code of the UI from the client folder which made by Next.js.
 The client is getting responses of the AI-model(LLM) from the server which is connected with the google colab - on which the LLM is trained. There are 3 servers running, one is on the local that is vscode, second 
