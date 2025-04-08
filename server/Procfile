@@ -1,0 +1,1 @@
+web: gunicorn src.controllers.email_server:app

@@ -20,7 +20,7 @@ export default function Page() {
 
     // Send user message to backend LLM API
     const response = await fetch(
-      "https://f0b8-34-16-206-150.ngrok-free.app/query",
+      "https://92dc-34-16-206-150.ngrok-free.app/query",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
